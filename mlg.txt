@@ -1,0 +1,33 @@
+1
+Q1
+Ces paramètres sont définis à l'entrée 7 du notebook.
+
+Q2
+La courbe cyan représente l'erreur durant le training et la courbe rouge représente l'erreur durant les tests. 
+L'erreur de test varie moins car le modèle est déjà établi.
+
+Q3
+Les deux courbes sont globalement plus élevées, car il est plus difficile de trouver un modèle efficace. 
+Elles varient aussi bien plus plus le spread est élevé car un petit changement au modèle peut entraîner des grands changements
+ aux résultats.
+
+Q4
+Dans ces cas-là, le set de test contient la plupart des points critiques (dans la zone floue), ce qui fait que le modèle 
+généré avec le reste des points ne peut pas prévoir correctement cette zone floue.
+
+Q5
+Globalement, plus le spread est élevé, plus la MSE le sera aussi. Si le spread est bas (0.4 ou 0.5), la variance de cette MSE sera 
+aussi souvent très basse, car très peu d'erreurs seront faites.
+
+2
+Q1
+Ces paramètres sont définis à l'entrée 8 du notebook.
+
+Q2
+En Cross-validation, on sépare le dataset en K parties. On prendra k-1 parties pour le training et la dernière pour les tests. 
+On fera ceci K fois, en changeant à chaque fois la partie utilisée pour les tests. (donc toutes les combinaisons possibles). 
+K est le nouveau paramètre à définir.
+
+Q3
+Ces boxplots sont bien plus étroites, ce qui signifie que l'erreur moyenne durant les tests est bien plus stable qu'avec la holdout validation.
+Cependant, la médiane de cette erreur reste assez semblable.
